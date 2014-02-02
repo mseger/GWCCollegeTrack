@@ -1,48 +1,52 @@
 extends layout
 
 block content
-	title= title
+    title= title
 
-	nav.top-bar(class="site-navbar")
-		ul.title-area(class="site-titleArea")
-			li.name
-				h1
-					a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
-
-
-	.large-3.columns
-		.docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
-			section.section
-				p.title
-					a(href='/about') About 
-			section.section
-				p.title 
-					a(href='/classwork') Classes 
-			section.section
-				p.title
-					a(href="/projectGallery") Project Gallery
-			section.section.active
-				p.title
-					a(href='/meetingSchedule') Meeting Schedule
-			section.section
-				p.title 
-					a(href="/contact") Contact 
+    nav.top-bar(class="site-navbar")
+        ul.title-area(class="site-titleArea")
+            li.name
+                h1
+                    a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
 
 
-	.container
-		div.row(style="margin-top: 50px")
-			div.large-10.push-1
-				h1 Meeting Schedule for Spring 2014
+    .large-3.columns
+        .docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
+            section.section
+                p.title
+                    a(href='/about') About 
+            section.section
+                p.title 
+                    a(href='/classwork') Classes 
+            section.section
+                p.title
+                    a(href="/projectGallery") Project Gallery
+            section.section.active
+                p.title
+                    a(href='/meetingSchedule') Meeting Schedule
+            section.section
+                p.title 
+                    a(href="/contact") Contact 
 
-				| We'll be meeting every two weeks for four hours each meeting. This 
-				br
-				br
-				| schedule doesn't yet include field trips and will be updated as 
-				br
-				br
-				| those dates are finalized. 
-				br
-				br
 
-			div.large-10.push-3(style="margin-left: 20px; margin-top: 20px")
-				iframe(src='https://www.google.com/calendar/embed?src=j7u89915mvesuukm7s94k6n4o4%40group.calendar.google.com&ctz=America/Los_Angeles', style='border: 0;', width='800', height='600', frameborder='0', scrolling='no')
+    .container
+        div.row(style="margin-top: 50px")
+            div.large-10.push-1
+                h1 Meeting Schedule for Spring 2014
+
+                | We'll be meeting every two weeks for four hours each meeting. This 
+                br
+                br
+                | schedule doesn't yet include field trips and will be updated as 
+                br
+                br
+                | those dates are finalized. 
+                br
+                br
+
+            div.large-10.push-3(style="margin-left: 20px; margin-top: 20px")
+                iframe(src='https://www.google.com/calendar/embed?src=j7u89915mvesuukm7s94k6n4o4%40group.calendar.google.com&ctz=America/Los_Angeles', style='border: 0;', width='800', height='600', frameborder='0', scrolling='no')
+
+
+
+

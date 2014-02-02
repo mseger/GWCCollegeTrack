@@ -1,80 +1,92 @@
 extends layout
 
 block content
-	title= title
+    title= title
 
-	nav.top-bar(class="site-navbar")
-		ul.title-area(class="site-titleArea")
-			li.name
-				h1
-					a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
-
-
-	.large-3.columns
-		.docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
-			section.section.active
-				p.title
-					a(href='/about') About 
-			section.section
-				p.title 
-					a(href='/classwork') Classes 
-			section.section
-				p.title
-					a(href="/projectGallery") Project Gallery
-			section.section
-				p.title
-					a(href='/meetingSchedule') Meeting Schedule
-			section.section
-				p.title 
-					a(href="/contact") Contact 
+    nav.top-bar(class="site-navbar")
+        ul.title-area(class="site-titleArea")
+            li.name
+                h1
+                    a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
 
 
-	.container
-		div.row(style="margin-top: 50px")
-			div.large-10.push-1
-				h1(style="margin-bottom:-20px") Welcome!  
-
-				img(src="http://detroitcenter.umich.edu/sites/default/files/imagecache/normal/Girls-Who-Code-Web.png", style="width:40%;")
-				img(src="http://hunterfreeman.files.wordpress.com/2011/04/plus-sign-22.jpg%3Fw%3D900", style="width:10%; padding-left: 10px")
-				img(src="http://www.denvertestprep.com/wp-content/uploads/2013/09/CT_logo.png")
-
-
-		div.row(style="margin-top: 50px")
-			div.large-10.push-3
-				h4 You've reached the home of the College Track, Bayview Girls Who Code club. A bit about us: 
-				br
-				br
-
-				h4 Girls Who Code: 
-
-				| Launched in Spring 2012, Girls Who Code is a national nonprofit organization working to close
-				br
-				br
-				| the gender gap in the technology and engineering sectors. With support from public and private
-				br
-				br
-				| partners, Girls Who Code works to educate, inspire, and equip high school girls with the skills 
-				br
-				br
-				| and resources to pursue opportunities in computing fields. 
+    .large-3.columns
+        .docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
+            section.section.active
+                p.title
+                    a(href='/about') About 
+            section.section
+                p.title 
+                    a(href='/classwork') Classes 
+            section.section
+                p.title
+                    a(href="/projectGallery") Project Gallery
+            section.section
+                p.title
+                    a(href='/meetingSchedule') Meeting Schedule
+            section.section
+                p.title 
+                    a(href="/contact") Contact 
 
 
-				h4(style="padding-top: 30px") College Track: 
+    .container
+        div.row(style="margin-top: 50px")
+            div.large-10.push-1
+                h1(style="margin-bottom:-20px") Welcome!  
 
-				| College Track is a national college completion nonprofit that empowers students from underserved 
-				br
-				br
-				| communities to reach their dream of a college degree. Through our center-based approach and  
-				br
-				br
-				| core service areas, College Track has created a culture of high expectations. We ensure that each 
-				br
-				br
-				| student is college ready and provide support that many students do not have in their homes or at 
-				br
-				br 
-				| their schools. Together, these components make a powerful, comprehensive program that  
-				br
-				br
-				| empowers students to achieve their dream of a college education.
+                img(src="http://detroitcenter.umich.edu/sites/default/files/imagecache/normal/Girls-Who-Code-Web.png", style="width:40%;")
+                img(src="http://hunterfreeman.files.wordpress.com/2011/04/plus-sign-22.jpg%3Fw%3D900", style="width:10%; padding-left: 10px")
+                img(src="http://www.denvertestprep.com/wp-content/uploads/2013/09/CT_logo.png")
+
+
+        div.row(style="margin-top: 50px")
+            div.large-10.push-3
+                h4 You've reached the home of the College Track, Bayview Girls Who Code club. A bit about us: 
+                br
+                br
+
+                h4 Girls Who Code: 
+
+                | Launched in Spring 2012, Girls Who Code is a national nonprofit organization working to close
+                br
+                br
+                | the gender gap in the technology and engineering sectors. With support from public and private
+                br
+                br
+                | partners, Girls Who Code works to educate, inspire, and equip high school girls with the skills 
+                br
+                br
+                | and resources to pursue opportunities in computing fields. 
+
+
+                h4(style="padding-top: 30px") College Track: 
+
+                | College Track is a national college completion nonprofit that empowers students from underserved 
+                br
+                br
+                | communities to reach their dream of a college degree. Through our center-based approach and  
+                br
+                br
+                | core service areas, College Track has created a culture of high expectations. We ensure that each 
+                br
+                br
+                | student is college ready and provide support that many students do not have in their homes or at 
+                br
+                br 
+                | their schools. Together, these components make a powerful, comprehensive program that  
+                br
+                br
+                | empowers students to achieve their dream of a college education.
+
+    .container
+        div.row(class="bottom-share-bar")
+            a.twitter-share-button(href='https://twitter.com/share', data-url='http://gwc-collegetrack.herokuapp.com/', data-text='Girls Who Code in action!', data-via='dismanntled') Tweet
+              script
+                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+            .fb-share-button(data-href='http://gwc-collegetrack.herokuapp.com/', data-type='button_count')
+
+
+
+
 
