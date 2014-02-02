@@ -1,0 +1,84 @@
+extends layout
+
+block content
+	title= title
+
+	nav.top-bar(class="site-navbar")
+		ul.title-area(class="site-titleArea")
+			li.name
+				h1
+					a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
+
+
+	.large-3.columns
+		.docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
+			section.section
+				p.title
+					a(href='/about') About 
+			section.section.active
+				p.title
+					a(href='/meetingSchedule') Meeting Schedule
+			section.section
+				p.title
+					a(href="/projectGallery") Project Gallery
+			section.section
+				p.title 
+					a(href="/contact") Contact 
+
+
+	.container
+		div.row(style="margin-top: 50px")
+			div.large-10.push-1
+				h1 Meeting Schedule for Spring 2014
+
+				| We'll be meeting every two weeks for four hours each meeting. This 
+				br
+				br
+				| schedule doesn't yet include field trips and will be updated as 
+				br
+				br
+				| those dates are finalized. 
+				br
+				br
+
+			div.large-10.push-3(style="margin-left: 20px; margin-top: 20px")
+
+				h4 2/2: 10AM - 2PM 
+				br
+				br
+
+				h4 2/16: 10AM - 2PM 
+				br
+				br
+
+				h4 2/22: 10AM - 2PM 
+				br
+				br
+
+				h4 3/15: 10AM - 2PM 
+				br
+				br
+
+
+				h4 3/29: 10AM - 2PM 
+				br
+				br
+
+				h4 4/5: 10AM - 2PM 
+				br
+				br
+
+				h4 4/19: 10AM - 2PM 
+				br
+				br
+
+				h4 5/3: 10AM - 2PM 
+				br
+				br
+
+				h4 5/24: 10AM - 2PM 
+				br
+				br
+
+
+	

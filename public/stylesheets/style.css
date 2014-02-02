@@ -1,0 +1,32 @@
+body {
+  padding: 100px;
+  font-family: 'Offside', cursive;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.site-navbar{
+	margin-top: -50px;
+	background-color: #FF5C9D; 
+}
+
+.site-titleArea{
+	font-family: 'Offside', cursive;
+	background-color: #FF5C9D; 
+}
+
+.site-navbarText{
+	font-family: 'The Girl Next Door', cursive;
+	font-size: 30px;
+}
+
+h1{
+	font-family: 'The Girl Next Door', cursive;
+	font-size: 40px;
+}
+
+h4{
+	font-family: 'Offside', cursive;
+}

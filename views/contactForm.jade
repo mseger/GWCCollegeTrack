@@ -1,0 +1,59 @@
+extends layout
+
+block content
+	title= title
+
+	nav.top-bar(class="site-navbar")
+		ul.title-area(class="site-titleArea")
+			li.name
+				h1
+					a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
+
+
+	.large-3.columns
+		.docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
+			section.section
+				p.title
+					a(href='/about') About 
+			section.section
+				p.title
+					a(href='/meetingSchedule') Meeting Schedule
+			section.section
+				p.title
+					a(href="/projectGallery") Project Gallery
+			section.section.active
+				p.title 
+					a(href="/contact") Contact 
+
+
+	.container
+		div.row(style="margin-top: 50px")
+			div.large-10.push-1(style="margin-bottom: 40px")
+				h1 Contact Us
+
+				| Don't hesitate to email us with any questions about class dates, joining the 
+				br
+				br 
+				| program, the meaning of life, or anything else really. 
+				br
+				br
+
+			div.large-10.push-3(style="margin-left: 20px; margin-top: 20px")
+				| Margaret-Ann Seger- 
+				a(href="mailto:margaret-ann@instagram.com") margaret-ann@instagram.com
+				br
+				br
+				| Ashley Yuki- 
+				a(href="mailto:ashleyyuki@fb.com") ashleyyuki@fb.com
+				br
+				br
+				| Lexi Ross- 
+				a(href="mailto:lbr@fb.com") lbr@fb.com
+
+
+
+
+
+
+
+	

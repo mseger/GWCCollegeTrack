@@ -1,0 +1,19 @@
+{
+  "name": "mashup",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.6",
+    "jade": "*",
+    "mongoose": "3.x",
+    "async" : "x"
+  },
+    "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+
+  }
+}

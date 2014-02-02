@@ -1,0 +1,38 @@
+extends layout
+
+block content
+	title= title
+
+	nav.top-bar(class="site-navbar")
+		ul.title-area(class="site-titleArea")
+			li.name
+				h1
+					a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
+
+
+	.large-3.columns
+		.docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
+			section.section
+				p.title
+					a(href='/about') About 
+			section.section
+				p.title
+					a(href='/meetingSchedule') Meeting Schedule
+			section.section.active 
+				p.title
+					a(href="/projectGallery") Project Gallery
+			section.section
+				p.title 
+					a(href="/contact") Contact 
+
+
+	.container
+		div.row(style="margin-top: 50px")
+			div.large-10.push-1
+				h1 Student Projects
+
+				| No projects to display yet! 
+
+
+
+	
