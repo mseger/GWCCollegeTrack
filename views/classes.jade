@@ -1,0 +1,62 @@
+extends layout
+
+block content
+    title= title
+
+    nav.top-bar(class="site-navbar")
+        ul.title-area(class="site-titleArea")
+            li.name
+                h1
+                    a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
+
+
+    .large-3.columns
+        .docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
+            section.section
+                p.title
+                    a(href='/about') About 
+            section.section.active 
+                p.title 
+                    a(href='/classwork') Classes 
+            section.section
+                p.title
+                    a(href='/meetingSchedule') Meeting Schedule
+            section.section
+                p.title
+                    a(href="/projectGallery") Project Gallery
+            section.section
+                p.title 
+                    a(href="/contact") Contact 
+
+    .container
+        div.row(style="margin-top: 50px")
+            div.large-10.push-1
+                h1 Classwork
+
+                h4 Class 1
+                br
+                br
+                | In this week's class, we will first be taking care of some logistics. Please
+                br
+                br
+                | take a minute to fill out a quick survey about yourself and your experience: 
+                br
+                br
+            div.large-10.push-3(style="margin-left: 20px")
+                a(href="http://bit.ly/1nEDzMF", target="_blank") http://bit.ly/1nEDzMF
+
+            div.large-10.push-1(style="margin-left: 20px; margin-top: 30px")
+                | Next, we're going to cover some of the basics of coding. For the first lesson, 
+                br
+                br
+                | we're focusing on programatically drawing pictures on 
+                a(href="https://www.khanacademy.org/cs/new", target="_blank") Khan Academy. 
+                br
+                br
+                script(src='http://www.khanacademy.org/cs/smiley/5212374946545664/embed.js?editor=yes&buttons=yes&author=yes&embed=yes', style="margin-top: 20px; width: 30%")
+                p
+                  | Made using:
+                  a(href='http://www.khanacademy.org/cs') Khan Academy Computer Science
+                  | .
+
+

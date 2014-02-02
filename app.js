@@ -8,6 +8,7 @@ var express = require('express')
   , path = require('path')
   , user = require('./routes/user')
   , home = require('./routes/home')
+  , classes = require('./routes/classes')
   , meetingSchedule = require('./routes/meetingSchedule')
   , projectGallery = require('./routes/projectGallery')
   , contact = require('./routes/contact')
@@ -37,6 +38,7 @@ app.configure('production', function () {
 
 app.get('/', home.splash);
 app.get('/about', home.splash);
+app.get('/classwork', classes.index);
 app.get('/meetingSchedule', meetingSchedule.display);
 app.get('/projectGallery', projectGallery.index);
 app.get('/contact', contact.display);
