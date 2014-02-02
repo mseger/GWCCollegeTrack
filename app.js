@@ -11,7 +11,6 @@ var express = require('express')
   , meetingSchedule = require('./routes/meetingSchedule')
   , projectGallery = require('./routes/projectGallery')
   , contact = require('./routes/contact')
-  , mongoose = require('mongoose')
 
 var app = express();
 
@@ -30,7 +29,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.configure('development', function () {
   app.set('host', 'localhost:3000');
   app.use(express.errorHandler());
-  mongoose.connect(process.env.MONGOLAB_URI || 'localhost');
 });
 
 app.configure('production', function () {
