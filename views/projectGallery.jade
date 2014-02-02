@@ -1,41 +1,104 @@
 extends layout
 
 block content
-	title= title
+    title= title
 
-	nav.top-bar(class="site-navbar")
-		ul.title-area(class="site-titleArea")
-			li.name
-				h1
-					a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
-
-
-	.large-3.columns
-		.docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
-			section.section
-				p.title
-					a(href='/about') About 
-			section.section
-				p.title 
-					a(href='/classwork') Classes 
-			section.section
-				p.title
-					a(href='/meetingSchedule') Meeting Schedule
-			section.section.active 
-				p.title
-					a(href="/projectGallery") Project Gallery
-			section.section
-				p.title 
-					a(href="/contact") Contact 
+    nav.top-bar(class="site-navbar")
+        ul.title-area(class="site-titleArea")
+            li.name
+                h1
+                    a(href='#', class="site-navbarText") GWC- College Track, Bayview Chapter
 
 
-	.container
-		div.row(style="margin-top: 50px")
-			div.large-10.push-1
-				h1 Student Projects
+    .large-3.columns
+        .docs.section-container.accordion(data-section='data-section', data-options='one_up: false')
+            section.section
+                p.title
+                    a(href='/about') About 
+            section.section
+                p.title 
+                    a(href='/classwork') Classes 
+            section.section.active 
+                p.title
+                    a(href="/projectGallery") Project Gallery
+            section.section
+                p.title
+                    a(href='/meetingSchedule') Meeting Schedule
+            section.section
+                p.title 
+                    a(href="/contact") Contact 
 
-				| No projects to display yet! 
+
+    .container
+        div.row(style="margin-top: 50px")
+            div.large-12.push-1
+                h1 Student Projects
+
+                h4 Class 1
+                br
+                br
+                | This week's challenge was to programatically draw an image using Khan Academy's interactive
+                br
+                br
+                | Processing.js, which is a really neat visualization library that allowed the girls to play around
+                br
+                br
+                | with coding in the terminal and then seeing the results of their work in real time. Did we mention how cool this is?!
+                br
+                br
+                | After only a few hours of coding, the results were impressive. Check it out! 
+                br
+                br
+                script(src='http://www.khanacademy.org/cs/panda/4735602807275520/embed.js?editor=yes&buttons=yes&author=yes&embed=yes')
+                p
+                  | Made using:
+                  a(href='http://www.khanacademy.org/cs') Khan Academy Computer Science
+                br
+                br
+                script(src='http://www.khanacademy.org/cs/mousecheese/6416118686154752/embed.js?editor=yes&buttons=yes&author=yes&embed=yes')
+                p
+                  | Made using:
+                  a(href='http://www.khanacademy.org/cs') Khan Academy Computer Science
+                  | .
+                br
+                br
+                script(src='http://www.khanacademy.org/cs/bear/6728051557662720/embed.js?editor=yes&buttons=yes&author=yes&embed=yes')
+                p
+                  | Made using:
+                  a(href='http://www.khanacademy.org/cs') Khan Academy Computer Science
+                  | .
+                script(src='http://www.khanacademy.org/cs/poke-ball/5305471953010688/embed.js?editor=yes&buttons=yes&author=yes&embed=yes')
+                p
+                  | Made using:
+                  a(href='http://www.khanacademy.org/cs') Khan Academy Computer Science
+                  | .
+                script(src='http://www.khanacademy.org/cs/matoki/6748136603123712/embed.js?editor=yes&buttons=yes&author=yes&embed=yes')
+                p
+                  | Made using:
+                  a(href='http://www.khanacademy.org/cs') Khan Academy Computer Science
+                  | .
+                script(src='http://www.khanacademy.org/cs/confident/5722046099095552/embed.js?editor=yes&buttons=yes&author=yes&embed=yes')
+                p
+                  | Made using:
+                  a(href='http://www.khanacademy.org/cs') Khan Academy Computer Science
+                  | .
+                script(src='http://www.khanacademy.org/cs/reality/5201712388243456/embed.js?editor=yes&buttons=yes&author=yes&embed=yes')
+                p
+                  | Made using:
+                  a(href='http://www.khanacademy.org/cs') Khan Academy Computer Science
+                  | .
+                script(src='http://www.khanacademy.org/cs/cute/6388745114746880/embed.js?editor=yes&buttons=yes&author=yes&embed=yes')
+                p
+                  | Made using:
+                  a(href='http://www.khanacademy.org/cs') Khan Academy Computer Science
+                  | .
 
 
 
-	
+
+
+
+
+
+
+
